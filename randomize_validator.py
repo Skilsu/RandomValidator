@@ -16,4 +16,4 @@ def random_variance(number_of_games=1000, repetition_of_game=10000):
         var += i
         if i > 0:
             print(str(idx) + ": " + str(i) + " = " + str(idx / number_of_games * 100)[:4] + "% -> " +
-                  str(var / 10000 * 100)[:4] + "%")
+                  str(var / repetition_of_game * 100)[:4] + "%")
